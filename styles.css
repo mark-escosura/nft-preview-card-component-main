@@ -1,0 +1,185 @@
+:root {
+  --background-color-main: hsl(217, 54%, 11%);
+  --background-color-secondary: hsl(216, 50%, 16%);
+  --primary-color-cyan: hsl(178, 100%, 50%);
+  --heading-color: hsl(0, 0%, 100%);
+  --paragraph-color: hsl(215, 51%, 70%);
+  --line-color: hsl(215, 32%, 27%);
+  --box-shadow-color: hsl(217, 54%, 10%);
+
+  --font-size: 18px;
+}
+
+/* CSS Reset */
+html, body, div, span, applet, object, iframe, table, caption, tbody, tfoot, thead, tr, th, td, 
+del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, 
+h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, 
+dl, dt, dd, ol, ul, li, fieldset, form, label, legend {
+	vertical-align: baseline;
+	font-family: inherit;
+	font-weight: inherit;
+	font-style: inherit;
+	font-size: 100%;
+	outline: 0;
+	padding: 0;
+	margin: 0;
+	border: 0;
+}
+
+body {
+	background: white;
+	line-height: 1;
+	color: black;
+}
+
+/* Global Styles */
+html {
+  font-size: 62.5%; 
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  min-height: 100vh;
+  font-family: 'Outfit', sans-serif;
+  background-color: var(--background-color-main);
+}
+
+p {
+  color: var(--paragraph-color);
+}
+
+/* Main Styles */
+.container {
+  display: flex;
+  flex-direction: column;
+  width: 360px;
+  height: 600px;
+  
+  padding: 30px;
+  border-radius: 15px;
+  background-color: var(--background-color-secondary);
+  box-shadow: 10px 10px 0px 10px var(--box-shadow-color);
+}
+
+#combined-images {
+  display: flex;
+  border-radius: 16px;
+  position: relative;
+}
+
+.equilibrium-image {
+  width: 360px;
+  height: 360px;
+  border-radius: 15px;
+}
+
+.hidden {
+  opacity: 0;
+  width: 70px;
+  position: absolute;
+  padding: 146px;
+  border-radius: 15px;
+  background-color: var(--primary-color-cyan);
+  transition: opacity 0.1s ease-in-out 0.1s;
+}
+
+.hidden:hover {
+  cursor: pointer;
+  opacity: 0.5;
+  background-color: var(--primary-color-cyan);
+}
+
+.equilibrium-heading {
+  color: var(--heading-color);
+  font-size: 30px;
+  font-weight: 600;
+  
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+
+.equilibrium-heading:hover {
+  cursor: pointer;
+  color: var(--primary-color-cyan);
+}
+
+.description {
+  font-size: var(--font-size);
+  font-weight: 300;
+  margin-bottom: 25px;
+}
+
+.price-duration-container {
+  display:flex;
+  justify-content: space-between;
+  align-items: baseline;
+  
+  margin-bottom: 25px;
+  font-size: 1.6em;
+}
+
+.eth-price {
+  color: var(--primary-color-cyan);
+  font-weight: 600;
+  margin-left: 10px;
+}
+
+.clock-duration {
+  width: 100px;
+}
+
+.duration {
+  margin-left: 10px;
+}
+
+.line {
+  width: 360px;
+  border-top: 1px solid var(--line-color);
+  margin-bottom: 25px;
+}
+
+.card-footer {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+
+.card-footer img {
+  border-radius: 50%;
+  border: 1px solid #fff;
+}
+
+.card-footer p {
+  margin-left: 25px;
+  font-size:1.6em;
+}
+
+.card-footer p > span {
+  font-weight: 300; 
+  color: #fff
+}
+
+.card-footer p > span:hover {
+  cursor: pointer;
+  color: var(--primary-color-cyan);
+}
+
+/* Footer Styles */
+footer {
+  margin-top: 40px;
+  font-size: 1.6em;
+  text-align: center;
+  color: var(--paragraph-color);
+}
+
+footer a {
+  color: var(--primary-color-cyan);
+  text-decoration: none;
+}
+
+footer a:hover {
+  color: var(--heading-color);
+}
