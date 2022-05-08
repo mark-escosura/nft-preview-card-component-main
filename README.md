@@ -50,3 +50,13 @@ Users should be able to:
 - Website - [Mark Escosura](https://mark-escosura-portfolio.vercel.app/)
 - Frontend Mentor - [@mark-escosura](https://www.frontendmentor.io/profile/mark-escosura)
 - Github - [@mark-escosura](https://www.github.com/mark-escosura)
+
+## Acknowledgement
+
+- Danilo Blas - [@Sdann26](https://www.frontendmentor.io/profile/Sdann26) - I was having trouble making the view icon fully visible on hover and Danilo proposed a solution that fixes my problem and suggested that I leave the opacity at 1 on `hidden:hover` class but changing the background using the `alpha` option which gives the background transparency.
+
+```css
+hsla(178.1, 100%, 50%, 0.5);
+```
+
+**The value 'a' (alpha) in [hsla](https://developer.mozilla.org/en-US/docs/Web/CSS/color_value/hsla) is to give it opacity.**

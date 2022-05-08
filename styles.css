@@ -80,16 +80,15 @@ p {
   opacity: 0;
   width: 70px;
   position: absolute;
-  padding: 146px;
+  padding: 145px;
   border-radius: 15px;
   background-color: var(--primary-color-cyan);
-  transition: opacity 0.1s ease-in-out 0.1s;
 }
 
 .hidden:hover {
   cursor: pointer;
-  opacity: 0.5;
-  background-color: var(--primary-color-cyan);
+  opacity: 1;
+  background-color: hsla(178.1, 100%, 50%, 0.5);;
 }
 
 .equilibrium-heading {
